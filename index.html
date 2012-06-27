@@ -1,10 +1,35 @@
 <!doctype html>
 <html>
     <head>
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
         <title>Addressbook-Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="jquery/jquery.mobile-1.1.0.min.css" />
+        <script src="jquery/jquery-1.6.4.min.js"></script>
+        <script src="jquery/jquery.mobile-1.1.0.min.js"></script>
     </head>
     <body>
-        Hallo
+        <div data-role="page" id="home">
+
+            <div data-role="header">
+                <h1>My Title</h1>
+            </div><!-- /header -->
+
+            <div data-role="content">	
+                <p>Hello world</p>		
+                <a href="#sub">Sub</a>
+            </div><!-- /content -->
+
+        </div><!-- /page -->
+        
+        <div data-role="page" id="sub">
+            <div data-role="header">
+                <h1>Another title</h1>
+            </div>
+
+            <div data-role="content">	
+                <p>Hello world2</p>	
+                <a href="#home">Home</a>
+            </div><!-- /content -->
+        </div>
     </body>
 </html>
